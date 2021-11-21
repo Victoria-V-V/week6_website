@@ -91,6 +91,10 @@ img {
     text-decoration: none;
 }
 
+.header-contacts__number:hover {
+    background: #545A2F;
+}
+
 .header-contacts__text {
     font-size: 18px;
     line-height: 26px;
@@ -150,3 +154,139 @@ img {
 }
 
 /* Header styles end */
+
+/* Main styles start */
+/* Section Description styles start */
+
+.description {
+    box-sizing: border-box;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 43.15;
+    grid-template-areas:
+        "desc-text desc-text desc-text"
+        "desc__img1 desc__img2 desc__img3";
+    justify-content: space-evenly;
+    height: 1250px;
+    max-height: 100vh;
+}
+
+.description-text {
+    grid-area: desc-text;
+    padding: 0px 15.2%;
+    text-align: center;
+}
+
+.description-text__title {
+    max-width: 1000px;
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: normal;
+}
+
+.description-text__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+.desc_bg_left {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    max-width: 380px;
+    z-index: -1;
+}
+
+.desc_bg_right {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    max-width: 380px;
+    z-index: -1;
+}
+
+.description__image1 {
+    grid-area: desc__img1;
+    align-self: end;
+}
+
+.description__image2 {
+    grid-area: desc__img2;
+    align-self: end;
+}
+
+.description__image3 {
+    grid-area: desc__img3;
+    align-self: end;
+}
+
+/* Section Description styles end */
+
+/* Section visual styles start */
+
+.visual {
+    height: 960px;
+    padding: 0 19%;
+
+    background: url(/assets/images/visual_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.visual-text__title {
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.visual-pics {
+    float: left;
+    width: 50%;
+}
+
+.visual__pic1 {
+    max-width: 525px;
+    margin-left: -200px;
+}
+
+.visual__pic2 {
+    margin-top: -50px;
+    max-width: 402px;
+}
+
+.visual-list {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 80vh;
+}
+
+.visual__item {
+    display: flex;
+    align-self: start;
+    column-gap: 35px;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.visual__item img {
+    align-self: start;
+}
+
+/* Section visual styles end */
+
+/* Section scope styles start */
+
+.scope {
+    box-sizing: border-box;
+    display: grid;
+    height: 1060px;
+    max-height: 100vh;
+}
