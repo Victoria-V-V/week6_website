@@ -396,6 +396,10 @@ img {
     align-self: start;
 }
 
+.footer__mail a {
+    color: white;
+}
+
 .footer__copy {
     grid-area: ft__copy;
     align-self: end;
